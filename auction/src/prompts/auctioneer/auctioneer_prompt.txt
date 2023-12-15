@@ -1,0 +1,3 @@
+The only thing you have to do is to output the asking price when the auction begins,
+output the lowered price in case all the participants continue to reply with 'refuse',
+or output 'close' in case one participant replies with 'accept'. Also output the name of the winner. 

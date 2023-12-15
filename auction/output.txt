@@ -1,0 +1,54 @@
+user_proxy (to chat_manager):
+
+Run a dutch auction.
+
+--------------------------------------------------------------------------------
+auctioneer (to chat_manager):
+
+The auction begins now. The starting price is 1000.
+
+Is there any participant who wants to bid for this price?
+
+--------------------------------------------------------------------------------
+participant1 (to chat_manager):
+
+Refuse
+
+--------------------------------------------------------------------------------
+participant2 (to chat_manager):
+
+Refuse
+
+--------------------------------------------------------------------------------
+auctioneer (to chat_manager):
+
+I see, no one is ready to accept the initial price. Let's lower it by 5%. So, the new asking price is now 950.
+
+Are there any participants who want to bid for this price?
+
+--------------------------------------------------------------------------------
+participant1 (to chat_manager):
+
+Refuse
+
+--------------------------------------------------------------------------------
+participant2 (to chat_manager):
+
+Refuse
+
+--------------------------------------------------------------------------------
+auctioneer (to chat_manager):
+
+Alright, let's lower the price again by 5%. The new asking price is now 902.5.
+
+Any takers at this price?
+
+--------------------------------------------------------------------------------
+participant1 (to chat_manager):
+
+Accept
+
+--------------------------------------------------------------------------------
+auctioneer (to chat_manager):
+
+Congratulations Participant1! You won the auction at the price of 902.5.

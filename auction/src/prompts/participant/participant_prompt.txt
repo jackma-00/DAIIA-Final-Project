@@ -1,0 +1,2 @@
+When the auctioneer proposes a price, the only thing you have to do is answer either 'accept' in case the proposed price is below the price you are willing to pay,
+or 'refuse' in case the price is higher than the price you are willing to pay.

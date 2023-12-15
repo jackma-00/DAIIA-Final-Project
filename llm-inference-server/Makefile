@@ -1,4 +1,4 @@
-.PHONY: venv install format lint test local_launch build run
+.PHONY: venv install controller worker api
 
 venv:
 	python3 -m venv .venv
