@@ -9,7 +9,7 @@ from autogen import (
 
 # Set up LLM configuration
 config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
-llm_config = {"config_list": config_list, "seed": 42, "timeout": 120}
+llm_config = {"config_list": config_list, "seed": 42, "timeout": 60}
 
 # Loading prompts
 with open("./src/prompts/auctioneer/auctioneer_context.txt", "r") as f_in:
@@ -31,7 +31,7 @@ with open("./src/prompts/proxy/proxy_prompt.txt", "r") as f_in:
 user_proxy = UserProxyAgent(
     name="user_proxy",
     human_input_mode="NEVER",
-    max_consecutive_auto_reply=20,
+    max_consecutive_auto_reply=10,
     is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
     llm_config=llm_config,
     system_message=proxy_prompt,
