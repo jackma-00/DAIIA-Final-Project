@@ -5,50 +5,44 @@ Run a dutch auction.
 --------------------------------------------------------------------------------
 auctioneer (to chat_manager):
 
-The auction begins now. The starting price is 1000.
-
-Is there any participant who wants to bid for this price?
+Welcome everyone, we're starting a thrilling Dutch auction today! The initial asking price for the item is 1000. Who'd like to start the bidding at this price?
 
 --------------------------------------------------------------------------------
 participant1 (to chat_manager):
 
-Refuse
+refuse
 
 --------------------------------------------------------------------------------
 participant2 (to chat_manager):
 
-Refuse
+refuse
 
 --------------------------------------------------------------------------------
 auctioneer (to chat_manager):
 
-I see, no one is ready to accept the initial price. Let's lower it by 5%. So, the new asking price is now 950.
-
-Are there any participants who want to bid for this price?
+Alright! I understand. Let's lower the asking price by 5%. The new asking price now stands at 950. Any takers at 950?
 
 --------------------------------------------------------------------------------
 participant1 (to chat_manager):
 
-Refuse
+refuse
 
 --------------------------------------------------------------------------------
 participant2 (to chat_manager):
 
-Refuse
+refuse
 
 --------------------------------------------------------------------------------
 auctioneer (to chat_manager):
 
-Alright, let's lower the price again by 5%. The new asking price is now 902.5.
-
-Any takers at this price?
+Got it, no takers at 950. Let's lower the price again by another 5%. The new price now is 902.50. Does anyone accept the price of 902.50?
 
 --------------------------------------------------------------------------------
 participant1 (to chat_manager):
 
-Accept
+accept
 
 --------------------------------------------------------------------------------
 auctioneer (to chat_manager):
 
-Congratulations Participant1! You won the auction at the price of 902.5.
+Congratulations, Participant1! You've won the auction. We close the bidding at the price of 902.50. Everyone else, thank you for participating. We hope to see you again at our next auction!
