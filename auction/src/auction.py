@@ -26,25 +26,27 @@ user_proxy = UserProxyAgent(
     name="user_proxy",
     human_input_mode="NEVER",
     max_consecutive_auto_reply=4,
-    llm_config=llm_config
+    llm_config=llm_config,
 )
 
 auctioneer = AssistantAgent(
     name="auctioneer",
     llm_config=llm_config,
-    system_message=auctioneer_prompt.format(asking_price=1000, percentage="5%", reserve_price=700),
+    system_message=auctioneer_prompt.format(
+        asking_price=1000, percentage="5%", reserve_price=700
+    ),
 )
 
 participant1 = AssistantAgent(
     name="participant1",
     llm_config=llm_config,
-    system_message=participant_prompt.format(price=920)
+    system_message=participant_prompt.format(price=920),
 )
 
 participant2 = AssistantAgent(
     name="participant2",
     llm_config=llm_config,
-    system_message=participant_prompt2.format(price=900)
+    system_message=participant_prompt2.format(price=900),
 )
 
 """participant3 = AssistantAgent(
